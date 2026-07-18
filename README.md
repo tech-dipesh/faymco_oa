@@ -1,15 +1,23 @@
-# faymco_oa
+# Payout Management System
+SDE Intern assignment With Express With Low Level Design and Api Development With Database Schema.
 
-To install dependencies:
 
-```bash
-bun install
-```
+## Docs:
+- The Low Level Design is on the `docs/lld.md` Which have the Actual Design and the My Though Process with Edge Case and trade Offs.
+- All the Api that include on the Project with all the api endpoints are on the: `docs/api.md`
+## Local Setup:
+i. ``` cp .env.example. .env``` # Or Manually Create a .env and Fill a: `DATABASE` with local postgres URL or the Remote Url: 
+ii. `bun install`
+  - AS my Primary Package Manager is Bun If you don't want you can do with: `npm install`
+iii. `bun migrate` This MIgrate all Raw Db Table Creation to a Db Setup.
+iv. `bun seed` Send a Test User to the db.
+v. `bun start` Run Our Server
 
-To run:
+## Tech Stack:
+- Db: Postgres
+- Validation: Zod
+- Http Server: Express
+- Packager Runner Manager: Bun
 
-```bash
-bun run index.ts
-```
 
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+## Every Folder:

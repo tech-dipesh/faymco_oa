@@ -1,7 +1,20 @@
 {
-  "name": "faymco_oa",
-  "module": "index.ts",
+  "name": "payout-system",
+  "version": "1.0.0",
   "type": "module",
+  "scripts": {
+    "migrate": "bun run src/migrate.js",
+    "seed": "bun run src/seed.js",
+    "start": "bun run src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "zod": "^3.23.8"
+  },
+  "module": "index.ts",
   "private": true,
   "devDependencies": {
     "@types/bun": "latest"
