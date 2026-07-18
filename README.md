@@ -21,3 +21,8 @@ v. `bun start` Run Our Server
 
 
 ## Every Folder:
+- `docs/` Actual Lld entities, relationshihps, business rules with Postman REady Endpoint List
+- `src/schema.sql` The $ tables
+- `src/services` The real Logical Concept such as reconciliation withdrawls recovery with row locked transcations.
+- `src/routes/` Thin wiring+ validation
+- `src/validation` Zod Validation
